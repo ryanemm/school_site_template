@@ -1,0 +1,31 @@
+import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
+
+class MissionSection extends StatelessWidget {
+  const MissionSection({Key? key}) : super(key: key);
+
+  @override
+  Widget build(BuildContext context) {
+    return Container(
+      padding: EdgeInsets.symmetric(vertical: 50, horizontal: 250),
+      child: Column(
+        children: [
+          Text(
+            "Our Mission",
+            style:
+                GoogleFonts.ubuntu(fontSize: 40, fontWeight: FontWeight.w500),
+          ),
+          SizedBox(height: 16),
+          Text(
+            "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed viverra ex a felis ultrices, suscipit consectetur tellus volutpat. Vivamus convallis sodales elit, sit amet lacinia turpis venenatis nec. Nullam vel convallis orci. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed viverra ex a felis ultrices, suscipit consectetur tellus volutpat. Vivamus convallis sodales elit, sit amet lacinia turpis venenatis nec. Nullam vel convallis orci. ",
+            style: GoogleFonts.ubuntu(
+              fontSize: 16,
+              fontWeight: FontWeight.w400,
+            ),
+            textAlign: TextAlign.center,
+          )
+        ],
+      ),
+    );
+  }
+}

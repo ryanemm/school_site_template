@@ -11,7 +11,7 @@ class NavBar extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      padding: EdgeInsets.symmetric(horizontal: 45, vertical: 38),
+      padding: EdgeInsets.symmetric(horizontal: 45, vertical: 24),
       child: Row(
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
         children: [
@@ -48,26 +48,26 @@ class NavBar extends StatelessWidget {
               children: [
                 Padding(
                   padding: const EdgeInsets.all(8.0),
-                  child: Text("Home", style: GoogleFonts.ubuntu(fontSize: 18)),
+                  child: Text("About", style: GoogleFonts.ubuntu(fontSize: 18)),
+                ),
+                Padding(
+                  padding: const EdgeInsets.all(8.0),
+                  child: Text("Academics",
+                      style: GoogleFonts.ubuntu(fontSize: 18)),
+                ),
+                Padding(
+                  padding: const EdgeInsets.all(8.0),
+                  child: Text("Admissions",
+                      style: GoogleFonts.ubuntu(fontSize: 18)),
                 ),
                 Padding(
                   padding: const EdgeInsets.all(8.0),
                   child:
-                      Text("Products", style: GoogleFonts.ubuntu(fontSize: 18)),
-                ),
-                Padding(
-                  padding: const EdgeInsets.all(8.0),
-                  child:
-                      Text("Features", style: GoogleFonts.ubuntu(fontSize: 18)),
-                ),
-                Padding(
-                  padding: const EdgeInsets.all(8.0),
-                  child:
-                      Text("Contact", style: GoogleFonts.ubuntu(fontSize: 18)),
+                      Text("Students", style: GoogleFonts.ubuntu(fontSize: 18)),
                 ),
                 SizedBox(width: 24),
                 SimpleButton(
-                  text: "Login",
+                  text: "Contact",
                   shadowColor: Colors.grey.shade500,
                   ftSize: 20,
                   buttonColor2: Color(0xFFC86DD7),
