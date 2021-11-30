@@ -7,22 +7,39 @@ class NewsWidget extends StatelessWidget {
     Key? key,
     required this.date,
     required this.summary,
+    required this.title,
   }) : super(key: key);
   final String date;
   final String summary;
+  final String title;
 
   @override
   Widget build(BuildContext context) {
     return Container(
-      width: MediaQuery.of(context).size.width * 0.25,
+      width: MediaQuery.of(context).size.width * 0.4,
       child: Column(
         children: [
           Text(
-            date,
+            title,
             style:
                 GoogleFonts.ubuntu(fontSize: 24, fontWeight: FontWeight.w500),
           ),
+          Text(
+            date,
+            style:
+                GoogleFonts.ubuntu(fontSize: 18, fontWeight: FontWeight.w500),
+          ),
           SizedBox(height: 10),
+          Container(
+            height: 350,
+            decoration: BoxDecoration(
+                image: DecorationImage(
+                    fit: BoxFit.cover,
+                    image: AssetImage(
+                      "assets/images/news_thumbnail_large.png",
+                    )),
+                borderRadius: BorderRadius.all(Radius.circular(20))),
+          ),
           Text(
             summary,
             style: GoogleFonts.ubuntu(
