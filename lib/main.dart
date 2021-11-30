@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:school_site_template/WIdgets/navbar.dart';
 import 'package:school_site_template/admissions_section.dart';
+import 'package:school_site_template/contact_section.dart';
 import 'package:school_site_template/events_section.dart';
 import 'package:school_site_template/hero_section.dart';
 import 'package:school_site_template/mission_section.dart';
@@ -50,7 +51,8 @@ class HomePage extends StatelessWidget {
               MissionSection(),
               AdmissionsSection(),
               NewsSection(),
-              EventsSection()
+              EventsSection(),
+              ContactSection()
             ],
           ),
         ),
