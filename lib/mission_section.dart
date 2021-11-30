@@ -7,19 +7,20 @@ class MissionSection extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      padding: EdgeInsets.symmetric(vertical: 50, horizontal: 250),
+      padding: EdgeInsets.symmetric(vertical: 100, horizontal: 250),
       child: Column(
         children: [
           Text(
-            "Our Mission",
+            "OUR MISSION",
             style:
-                GoogleFonts.ubuntu(fontSize: 40, fontWeight: FontWeight.w500),
+                GoogleFonts.ubuntu(fontSize: 64, fontWeight: FontWeight.w500),
           ),
           SizedBox(height: 16),
           Text(
             "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed viverra ex a felis ultrices, suscipit consectetur tellus volutpat. Vivamus convallis sodales elit, sit amet lacinia turpis venenatis nec. Nullam vel convallis orci. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed viverra ex a felis ultrices, suscipit consectetur tellus volutpat. Vivamus convallis sodales elit, sit amet lacinia turpis venenatis nec. Nullam vel convallis orci. ",
             style: GoogleFonts.ubuntu(
-              fontSize: 16,
+              fontSize: 18,
+              height: 1.5,
               fontWeight: FontWeight.w400,
             ),
             textAlign: TextAlign.center,

@@ -9,14 +9,14 @@ class HeroSection extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return ResponsiveLayout(
-      largeScreen: LargeChild(),
-      smallScreen: SmallChild(),
-      mediumScreen: MediumChild(),
+      largeScreen: _LargeChild(),
+      smallScreen: _SmallChild(),
+      mediumScreen: _MediumChild(),
     );
   }
 }
 
-class LargeChild extends StatelessWidget {
+class _LargeChild extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
@@ -42,9 +42,9 @@ class LargeChild extends StatelessWidget {
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
                   Text(
-                    "History",
+                    "HISTORY",
                     style: GoogleFonts.ubuntu(
-                        fontSize: 48,
+                        fontSize: 64,
                         fontWeight: FontWeight.w700,
                         color: Colors.white),
                   ),
@@ -69,14 +69,14 @@ class LargeChild extends StatelessWidget {
   }
 }
 
-class MediumChild extends StatelessWidget {
+class _MediumChild extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container();
   }
 }
 
-class SmallChild extends StatelessWidget {
+class _SmallChild extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container();

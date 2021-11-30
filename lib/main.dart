@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:school_site_template/WIdgets/navbar.dart';
+import 'package:school_site_template/admissions_section.dart';
 import 'package:school_site_template/hero_section.dart';
 import 'package:school_site_template/mission_section.dart';
 import 'utils/responsiveLayout.dart';
@@ -36,7 +37,12 @@ class HomePage extends StatelessWidget {
         backgroundColor: Colors.transparent,
         body: SingleChildScrollView(
           child: Column(
-            children: [NavBar(), HeroSection(), MissionSection()],
+            children: [
+              NavBar(),
+              HeroSection(),
+              MissionSection(),
+              AdmissionsSection(),
+            ],
           ),
         ),
       ),
