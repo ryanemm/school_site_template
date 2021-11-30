@@ -1,31 +1,18 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:school_site_template/components/simple_button.dart';
-import 'package:school_site_template/utils/responsiveLayout.dart';
 
-class HeroSection extends StatelessWidget {
-  const HeroSection({Key? key}) : super(key: key);
+class EventsSection extends StatelessWidget {
+  const EventsSection({Key? key}) : super(key: key);
 
-  @override
-  Widget build(BuildContext context) {
-    return ResponsiveLayout(
-      largeScreen: _LargeChild(),
-      smallScreen: _SmallChild(),
-      mediumScreen: _MediumChild(),
-    );
-  }
-}
-
-class _LargeChild extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      height: MediaQuery.of(context).size.height * 0.88,
-      width: double.infinity,
+      height: 600,
       decoration: BoxDecoration(
           image: DecorationImage(
         fit: BoxFit.cover,
-        image: AssetImage("assets/images/header.jpg"),
+        image: AssetImage("assets/images/school_hall.jpg"),
       )),
       child: Stack(children: [
         Positioned(
@@ -43,7 +30,7 @@ class _LargeChild extends StatelessWidget {
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
                   Text(
-                    "HISTORY",
+                    "EVENTS",
                     style: GoogleFonts.ubuntu(
                         fontSize: 64,
                         fontWeight: FontWeight.w700,
@@ -59,7 +46,7 @@ class _LargeChild extends StatelessWidget {
                   ),
                   SizedBox(height: 16),
                   SimpleButton(
-                    text: "Learn More",
+                    text: "See all upcoming events",
                     shadowColor: Colors.transparent,
                   )
                 ],
@@ -67,19 +54,5 @@ class _LargeChild extends StatelessWidget {
         ),
       ]),
     );
-  }
-}
-
-class _MediumChild extends StatelessWidget {
-  @override
-  Widget build(BuildContext context) {
-    return Container();
-  }
-}
-
-class _SmallChild extends StatelessWidget {
-  @override
-  Widget build(BuildContext context) {
-    return Container();
   }
 }

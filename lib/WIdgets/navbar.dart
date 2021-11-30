@@ -11,7 +11,7 @@ class NavBar extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      padding: EdgeInsets.symmetric(horizontal: 45, vertical: 24),
+      padding: EdgeInsets.symmetric(horizontal: 45, vertical: 16),
       child: Row(
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
         children: [
@@ -47,21 +47,21 @@ class NavBar extends StatelessWidget {
               mainAxisAlignment: MainAxisAlignment.spaceAround,
               children: [
                 Padding(
-                  padding: const EdgeInsets.all(8.0),
+                  padding: const EdgeInsets.symmetric(horizontal: 24.0),
                   child: Text("About", style: GoogleFonts.ubuntu(fontSize: 18)),
                 ),
                 Padding(
-                  padding: const EdgeInsets.all(8.0),
+                  padding: const EdgeInsets.symmetric(horizontal: 24.0),
                   child: Text("Academics",
                       style: GoogleFonts.ubuntu(fontSize: 18)),
                 ),
                 Padding(
-                  padding: const EdgeInsets.all(8.0),
+                  padding: const EdgeInsets.symmetric(horizontal: 24.0),
                   child: Text("Admissions",
                       style: GoogleFonts.ubuntu(fontSize: 18)),
                 ),
                 Padding(
-                  padding: const EdgeInsets.all(8.0),
+                  padding: const EdgeInsets.symmetric(horizontal: 24.0),
                   child:
                       Text("Students", style: GoogleFonts.ubuntu(fontSize: 18)),
                 ),
@@ -69,7 +69,7 @@ class NavBar extends StatelessWidget {
                 SimpleButton(
                   text: "Contact",
                   shadowColor: Colors.grey.shade500,
-                  ftSize: 20,
+                  ftSize: 18,
                   buttonColor2: Color(0xFFC86DD7),
                   buttonColor1: Color(0xFF3023AE),
                 )

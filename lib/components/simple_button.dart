@@ -41,7 +41,7 @@ class SimpleButton extends StatelessWidget {
               spreadRadius: 0)
         ],
         gradient: LinearGradient(colors: [buttonColor1, buttonColor2]),
-        borderRadius: BorderRadius.circular(30),
+        borderRadius: BorderRadius.circular(6),
       ),
       child: (TextButton(
         child: Text(

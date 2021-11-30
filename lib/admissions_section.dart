@@ -26,44 +26,47 @@ class _LargeChild extends StatelessWidget {
       child: Row(
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
         children: [
-          Column(
-            crossAxisAlignment: CrossAxisAlignment.start,
-            mainAxisAlignment: MainAxisAlignment.spaceBetween,
-            children: [
-              Text(
-                "ADMISSIONS",
-                style: GoogleFonts.ubuntu(
-                    fontSize: 64,
-                    fontWeight: FontWeight.w500,
-                    color: Colors.white),
-              ),
-              SizedBox(height: 24),
-              Container(
-                width: MediaQuery.of(context).size.width * 0.4,
-                child: Text(
-                  "We pride ourselves on ensuring that we produce Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed viverra ex a felis ultrices, suscipit consectetur tellus volutpat. Vivamus convallis sodales elit, sit amet lacinia turpis venenatis nec. Nullam vel convallis orci",
+          Expanded(
+            flex: 2,
+            child: Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+              children: [
+                Text(
+                  "ADMISSIONS",
                   style: GoogleFonts.ubuntu(
-                      fontSize: 18,
-                      height: 1.5,
-                      fontWeight: FontWeight.w100,
+                      fontSize: 64,
+                      fontWeight: FontWeight.w500,
                       color: Colors.white),
-                  textAlign: TextAlign.justify,
                 ),
-              ),
-              SizedBox(height: 20),
-              Container(
-                width: MediaQuery.of(context).size.width * 0.4,
-                child: Text(
-                  "We pride ourselves on ensuring that we produce Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed viverra ex a felis ultrices, suscipit consectetur tellus volutpat. Vivamus convallis sodales elit, sit amet lacinia turpis venenatis nec. Nullam vel convallis orci",
-                  style: GoogleFonts.ubuntu(
-                      fontSize: 18,
-                      height: 1.5,
-                      fontWeight: FontWeight.w300,
-                      color: Colors.white),
-                  textAlign: TextAlign.justify,
+                SizedBox(height: 24),
+                Container(
+                  width: MediaQuery.of(context).size.width * 0.4,
+                  child: Text(
+                    "We pride ourselves on ensuring that we produce Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed viverra ex a felis ultrices, suscipit consectetur tellus volutpat. Vivamus convallis sodales elit, sit amet lacinia turpis venenatis nec. Nullam vel convallis orci",
+                    style: GoogleFonts.ubuntu(
+                        fontSize: 18,
+                        height: 1.5,
+                        fontWeight: FontWeight.w100,
+                        color: Colors.white),
+                    textAlign: TextAlign.justify,
+                  ),
                 ),
-              )
-            ],
+                SizedBox(height: 20),
+                Container(
+                  width: MediaQuery.of(context).size.width * 0.4,
+                  child: Text(
+                    "We pride ourselves on ensuring that we produce Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed viverra ex a felis ultrices, suscipit consectetur tellus volutpat. Vivamus convallis sodales elit, sit amet lacinia turpis venenatis nec. Nullam vel convallis orci",
+                    style: GoogleFonts.ubuntu(
+                        fontSize: 18,
+                        height: 1.5,
+                        fontWeight: FontWeight.w300,
+                        color: Colors.white),
+                    textAlign: TextAlign.justify,
+                  ),
+                )
+              ],
+            ),
           ),
           Container(
             child: SimpleButton(

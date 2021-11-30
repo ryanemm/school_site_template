@@ -38,7 +38,7 @@ class NewsWidget extends StatelessWidget {
                     image: AssetImage(
                       "assets/images/news_thumbnail_large.png",
                     )),
-                borderRadius: BorderRadius.all(Radius.circular(10))),
+                borderRadius: BorderRadius.all(Radius.circular(6))),
           ),
           Text(
             summary,
