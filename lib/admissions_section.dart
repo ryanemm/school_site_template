@@ -33,11 +33,11 @@ class _LargeChild extends StatelessWidget {
               Text(
                 "ADMISSIONS",
                 style: GoogleFonts.ubuntu(
-                    fontSize: 72,
+                    fontSize: 64,
                     fontWeight: FontWeight.w500,
                     color: Colors.white),
               ),
-              SizedBox(height: 20),
+              SizedBox(height: 24),
               Container(
                 width: MediaQuery.of(context).size.width * 0.4,
                 child: Text(

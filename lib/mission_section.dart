@@ -15,7 +15,7 @@ class MissionSection extends StatelessWidget {
             style:
                 GoogleFonts.ubuntu(fontSize: 64, fontWeight: FontWeight.w500),
           ),
-          SizedBox(height: 16),
+          SizedBox(height: 24),
           Text(
             "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed viverra ex a felis ultrices, suscipit consectetur tellus volutpat. Vivamus convallis sodales elit, sit amet lacinia turpis venenatis nec. Nullam vel convallis orci. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed viverra ex a felis ultrices, suscipit consectetur tellus volutpat. Vivamus convallis sodales elit, sit amet lacinia turpis venenatis nec. Nullam vel convallis orci. ",
             style: GoogleFonts.ubuntu(

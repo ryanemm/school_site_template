@@ -3,14 +3,20 @@ import 'package:school_site_template/WIdgets/navbar.dart';
 import 'package:school_site_template/admissions_section.dart';
 import 'package:school_site_template/hero_section.dart';
 import 'package:school_site_template/mission_section.dart';
+import 'package:school_site_template/news_section.dart';
 import 'utils/responsiveLayout.dart';
 
 void main() {
   runApp(MyApp());
 }
 
-class MyApp extends StatelessWidget {
+class MyApp extends StatefulWidget {
   // This widget is the root of your application.
+  @override
+  _MyAppState createState() => _MyAppState();
+}
+
+class _MyAppState extends State<MyApp> {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
@@ -42,6 +48,7 @@ class HomePage extends StatelessWidget {
               HeroSection(),
               MissionSection(),
               AdmissionsSection(),
+              NewsSection()
             ],
           ),
         ),
